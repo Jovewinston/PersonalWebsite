@@ -25,7 +25,7 @@ export default function Project1Page() {
                 <p className="proj-description">As a current <strong>advisor</strong> and <strong>ex-president</strong> of GenDigital Academy, I’ve led efforts to bring digital literacy to students across Indonesia, from teaching weekly sessions and hosting coding workshops to breaking the national record for the biggest digital literacy teaching session in Indonesia, reaching <strong>4,500+ students in one-sitting</strong>. Through it all, I’ve focused on making tech education inclusive, practical, and empowering for underserved communities mainly in Indonesia and some parts of ASEAN.</p>
                 <img src="gendigitalpics/gendpic1.JPG"className="gend-img" alt="GenDigital Pic 1" />
                 <img src="gendigitalpics/gendpic7.png" className="gend-img" alt="GenDigital Pic 1" />
-                <img src="gendigitalpics/gendpic5.jpg" className="gend-img" alt="GenDigital Pic 1" />
+                <img src="gendigitalpics/gendpic5.JPG" className="gend-img" alt="GenDigital Pic 1" />
                 <img src="gendigitalpics/gendpic6.png" className="gend-img" alt="GenDigital Pic 1" />
 
 

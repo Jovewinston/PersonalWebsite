@@ -13,7 +13,7 @@ export default function ergoPage() {
                 <h2 className="project-h2">
                 3rd Place AI Hackathon Winner
                 </h2>
-                <img src="ergopics/ergoPic.png"className="gend-img" alt="datathon Pic 1" />
+                <img src="ergopics/ErgoPic.png"className="gend-img" alt="datathon Pic 1" />
                 <p className="proj-description">  Co-developed <strong>Ergo</strong>, the concept for an innovative AI-driven system offers personalized recommendations for ergonomic products, marking a significant leap forward in how we approach workplace health and personal well-being. <strong>Youngest team to win the hackathon.</strong>
                 </p>
             </div>

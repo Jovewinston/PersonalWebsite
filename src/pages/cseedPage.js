@@ -31,7 +31,7 @@ export default function cseedPage() {
                 <img src="cseedpics/cseedpic1.jpg"className="gend-img" alt="cseed Pic 1" />
                 <img src="cseedpics/cseedpic2.jpg"className="gend-img" alt="cseed Pic 2" />
                 <img src="cseedpics/cseedpic3.jpg"className="gend-img" alt="cseed Pic 3" />
-                <img src="cseedpics/cseedpic4.jpg"className="gend-img" alt="cseed Pic 4" />
+                <img src="cseedpics/cseedpic4.JPG"className="gend-img" alt="cseed Pic 4" />
 
             </div>
         </div>
