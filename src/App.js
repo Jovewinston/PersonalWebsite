@@ -1,24 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AboutMeSection from './components/AboutMeSection';
+import HeroSection from './components/HeroSection';
+import ProjectSection from './components/ProjectSection';
+import SkillSection from './components/SkillSection';
+import GenDigitalPage from './pages/GenDigitalPage';
+import NotdPage from './pages/notdPage';
+import CseedPage from './pages/cseedPage';
+import FilewizPage from './pages/filewizPage';
+import DatathonPage from './pages/datathonPage'
+import ErgoPage from './pages/ergoPage';
+function Home() {
+  return (
+    <div className="App">
+      <HeroSection />
+      <AboutMeSection />
+      <div className="wave-divider">
+        <svg viewBox="0 0 1440 300" preserveAspectRatio="none">
+          <path
+            className="wave-path"
+            d="M0,85 C360,-80 1080,260 1440,85 L1440,300 L0,300 Z"
+            fill="#1b2b41"
+          />
+        </svg>
+      </div>
+      <ProjectSection />
+      <SkillSection />
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/gendigitalPage" element={<GenDigitalPage />} />
+        <Route path="/notdPage" element={<NotdPage />} />
+        <Route path="/cseedPage" element={<CseedPage />} />
+        <Route path="/filewizPage" element={<FilewizPage />} />
+        <Route path="/datathonPage" element={<DatathonPage />} />
+        <Route path="/ergoPage" element={<ErgoPage />} />
+
+
+
+
+
+        </Routes>
+    </Router>
   );
 }
 

@@ -1,38 +1,54 @@
+/* App.css */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  background-color: #1e1e1e; /* Dark gray */
+  padding: 80px 8vw;        /* Comfortable spacing */
+  min-height: 100vh;        /* Optional: makes each section full screen */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.wave-divider {
+  background-color: #f6f3ea;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f3ea; 
+
+}
+
+.wave-path {
+  animation: ultraWave 4s ease-in-out infinite alternate;
+}
+
+@keyframes ultraWave {
+  0% {
+    d: path("M0,85 C360,-80 1080,260 1440,85 L1440,300 L0,300 Z");
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    d: path("M0,60 C360,150 1080,-40 1440,60 L1440,300 L0,300 Z");
+  }
+  100% {
+    d: path("M0,90 C360,-120 1080,280 1440,90 L1440,300 L0,300 Z");
   }
 }

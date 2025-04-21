@@ -1,0 +1,76 @@
+.about-section {
+    background-color: #f6f3ea;
+    color: #1b2b41;
+    padding: 50px 8vw 1vh 8vw;
+    min-height: 30vh;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* helps with responsiveness */
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 40px;
+    font-size: 0.2rem;
+
+  }
+  .about-text p {
+    font-size: 1.4rem;
+    color: rgb(88, 88, 88);
+  }
+
+  
+  .about-image {
+    padding-top: 30px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    
+  }
+  
+  .about-image img {
+    max-height: 50vh; /* 60% of the viewport height */
+    width: auto;
+    height: auto;
+    border-radius: 8%;
+
+}
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scribble-highlight {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .scribble-highlight::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    width: 60%;
+    height: 180%;
+    background: url('../../public/scribble.svg') no-repeat center;
+    background-size: contain;
+    z-index: -1;
+    pointer-events: none;
+  }
+  p.about-me {
+    color:#1b2b41;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+ 

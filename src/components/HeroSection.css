@@ -1,0 +1,121 @@
+/* src/components/HeroSection.css */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./homepagebackgroundfive.png'); /* put your image in /public */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(24, 24, 24, 0.2); /* slightly transparent */
+    backdrop-filter: blur(20px);         /* 💫 this adds the blur */
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3); /* 💥 adds the shadow */
+    color: white;
+    z-index: 999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero-text {
+    z-index: 2;
+    position: relative;
+    color: white;
+    text-align: left;
+    font-size: 3rem;
+    padding-left: 8vw;   /* ✅ keeps it spaced from the left edge */
+    padding-right: 8vw;  /* ✅ optional, keeps it from overflowing on right */
+    padding-top: 70vh;   /* ✅ pushes it down from the top */
+  }
+  
+  .first-name {
+    font-weight: bold;
+    font-family: 'Montserrat','Arial';
+    font-weight: 700;
+  }
+  
+  .last-name {
+    font-weight: bold;
+    margin-top: 0.2em;
+    font-family: 'Montserrat','Arial';
+    font-weight: 100;
+  }
+
+  .hero-text h1 {
+    margin: 0;
+    line-height: 1.1; /* Optional: tighter spacing between lines */
+    text-shadow: 3px 3px 10px rgb(73, 72, 72);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 4, 10, 0.5); /* tweak the last number for darkness */
+    z-index: 1;
+  }
+  .typing-container {
+    display: inline-block;
+  }
+  
+  .typing {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    animation: typing 2.5s steps(13, end) forwards, blink 0.75s step-end infinite;
+    width: 0;
+    display: inline-block;
+  }
+  
+  .typing2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    animation: typing2 2.5s steps(11, end) forwards, blink 0.75s step-end infinite;
+    animation-delay: 2.5s;
+    width: 0;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent }
+    50% { border-color: white }
+  }
+
+
+  

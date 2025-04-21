@@ -1,0 +1,13 @@
+
+<svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <path 
+    transform="matrix(0.9791300296783447,0,0,0.9791300296783447,400,179)"
+    stroke-linejoin="miter"
+    fill-opacity="0"
+    stroke-miterlimit="4"
+    stroke="#376388"
+    stroke-opacity="1"
+    stroke-width="30"
+    d="M253,-161 C253,-161 -284.78900146484375,-201.4600067138672 -376,-21 C-469,163 67.62300109863281,174.2100067138672 256,121 C564,34 250.82899475097656,-141.6929931640625 19.10700035095215,-116.93599700927734"
+  />
+</svg>

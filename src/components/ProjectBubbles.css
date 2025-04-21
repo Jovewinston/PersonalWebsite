@@ -1,0 +1,44 @@
+
+
+  .project-bubble-grid {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    padding: 2rem 0;
+  }
+  
+  .bubble {
+    width: clamp(200px, 22vw, 160px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 20px 10px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    animation: floatBubble 4s ease-in-out infinite;
+  }
+  
+  .bubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .bubble:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes floatBubble {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-70px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .bubble:nth-child(odd) {
+    animation-delay: 0s;
+  }
+  
+  .bubble:nth-child(even) {
+    animation-delay: 2s;
+  }
