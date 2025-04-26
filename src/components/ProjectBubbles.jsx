@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     name: "Notd Project",
     image: "project_icons/notdicon.png",
-    link: "/notdPage",
+    link: "/bilbyPage",
     position: { top: "10%", left: "15%" }
   },
   {

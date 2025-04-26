@@ -5,11 +5,12 @@ import HeroSection from './components/HeroSection';
 import ProjectSection from './components/ProjectSection';
 import SkillSection from './components/SkillSection';
 import GenDigitalPage from './pages/GenDigitalPage';
-import NotdPage from './pages/notdPage';
+import BilbyPage from './pages/bilbyPage';
 import CseedPage from './pages/cseedPage';
 import FilewizPage from './pages/filewizPage';
 import DatathonPage from './pages/datathonPage'
 import ErgoPage from './pages/ergoPage';
+import BilbyPage from './pages/bilbyPage';
 function Home() {
   return (
     <div className="App">
@@ -36,7 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gendigitalPage" element={<GenDigitalPage />} />
-        <Route path="/notdPage" element={<NotdPage />} />
+        <Route path="/bilbyPage" element={<BilbyPage />} />
         <Route path="/cseedPage" element={<CseedPage />} />
         <Route path="/filewizPage" element={<FilewizPage />} />
         <Route path="/datathonPage" element={<DatathonPage />} />

@@ -3,7 +3,7 @@ import './GenDigitalPage.css';
 import { useEffect, useRef } from "react";  
 import { Link } from 'react-router-dom';
 
-export default function NotdPage() {
+export default function BilbyPage() {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -17,12 +17,9 @@ export default function NotdPage() {
       <NavBar />
       <div className="centered-container">
       <Link to="/fileWizPage" className="next-button">
-      
-      </Link>
-      <Link to="/fileWizPage" className="next-button">
         <p>Next project / experience →</p>
       </Link>
-        <h1 className="project-h1">Notd.</h1>
+        <h1 className="project-h1">BilbyNotes</h1>
         <h2 className="project-h2">Demo Video (Still in Progress)</h2>
 
         <div className="responsive-video">
@@ -39,7 +36,7 @@ export default function NotdPage() {
         </div>
 
         <p className="proj-description">
-          Building <strong>Notd.</strong>, a tool that helps students take better notes just by taking screenshots. Let’s say you’re watching a lecture or reading something online — you can screenshot a slide or diagram, and the app will pull out the important info like text, tables, and even images. It then organizes it all into clean, readable notes that automatically get saved to your text editor.
+          Building <strong>Bilby</strong>, a tool that helps students take better notes just by taking screenshots. Let’s say you’re watching a lecture or reading something online — you can screenshot a slide or diagram, and the app will pull out the important info like text, tables, and even images. It then organizes it all into clean, readable notes that automatically get saved to your text editor.
 
 It uses a Chrome extension so you can take screenshots straight from your browser and send them to your notes editor. Down the line, my team wants to add more features that would help someone create a cheat sheet or glossary in just one click, and even feature that help you understand and interact with your notes better.
         </p>
