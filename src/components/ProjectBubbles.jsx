@@ -5,8 +5,8 @@ import './ProjectBubbles.css';
 const projects = [
   {
     id: 1,
-    name: "Notd Project",
-    image: "project_icons/notdicon.png",
+    name: "Bilby Project",
+    image: "project_icons/bilbyicon.png",
     link: "/bilbyPage",
     position: { top: "10%", left: "15%" }
   },
