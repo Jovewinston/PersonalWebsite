@@ -6,7 +6,7 @@ export default function ergoPage() {
         <div>
             <NavBar />
             <div className="centered-container">
-                <Link to="/notdPage" className="next-button">
+                <Link to="/bilbyPage" className="next-button">
                     <p>Next project / experience →</p>
                 </Link>
                 <h1 className="project-h1">Ergo</h1>
