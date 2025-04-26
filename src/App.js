@@ -10,7 +10,6 @@ import CseedPage from './pages/cseedPage';
 import FilewizPage from './pages/filewizPage';
 import DatathonPage from './pages/datathonPage'
 import ErgoPage from './pages/ergoPage';
-import BilbyPage from './pages/bilbyPage';
 function Home() {
   return (
     <div className="App">
